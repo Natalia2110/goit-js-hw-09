@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
 
 body {
     margin: 0 auto;  
@@ -17,7 +17,7 @@ label {
     /* gap: 16px; */
     border-radius: 8px;
     padding: 24px;
-    width: 408px;
+    width: 360px;
     /* height: 296px; */
 }
 /* .feedback-form:first-child{ */
@@ -26,7 +26,7 @@ label {
 /* } */
 
 .feedback-form>label {
-    width: 360px;
+    /* width: 360px; */
     /* height: 72px; */
     display: flex;
     align-items: flex-start;
@@ -73,8 +73,8 @@ label {
 
 .feedback-form input,
 .feedback-form textarea {
-    font: inherit;
-    width: 100%;
+    font-family: inherit;
+    width: 338px;
     height: 100%;
     border: 1px solid #808080;
     border-radius: 4px;
@@ -93,13 +93,10 @@ label {
 
 .feedback-form input{
     height: 100%;
-    
     border-radius: 4px;
-    /* width: 360px; */
-    height: 40px;
 }
 
 .feedback-form textarea {
-    min-height: 80px;
+    min-height: 62px;
     resize: none;
 }
