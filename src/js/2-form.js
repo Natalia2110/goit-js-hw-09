@@ -9,8 +9,8 @@ const form = document.querySelector('.feedback-form');
 // console.log(form);
 
 form.addEventListener('input', () => {
-  formData.email = form.elements.email.value;
-  formData.message = form.elements.message.value;
+  formData.email = form.elements.email.value.trim();
+  formData.message = form.elements.message.value.trim();
   // console.log(formData);
   saveToLocalStorage(STORAGE_KEY, formData);
   // return formData;
@@ -44,9 +44,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
 form.addEventListener('submit', event => {
   event.preventDefault();
-  if (form.elements.email.value !== '' && form.elements.message.value !== '') {
-    formData.email = form.elements.email.value;
-    formData.message = form.elements.message.value;
+  const email = form.elements.email.value.trim();
+  const message = form.elements.message.value.trim();
+  if (email !== '' && message !== '') {
+    formData.email = email;
+    formData.message = message;
     console.log(formData);
 
     form.reset();
